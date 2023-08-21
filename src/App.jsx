@@ -2,7 +2,7 @@ import{
     Hero, PopularProducts, Subscribe, SpecialOffer, SuperQuality, Footer, CustomerReviews, Services
 } from './sections/index';
 
-import Nav from './components/nav';
+import Nav from './components/Nav';
 
 const App = () => (
 
