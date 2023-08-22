@@ -3,6 +3,7 @@ import{
 } from './sections/index';
 
 import Nav from './components/Nav';
+import JustIn from './sections/JustIn';
 
 const App = () => (
 
@@ -12,6 +13,11 @@ const App = () => (
   <section className="xl:padding-l wide:padding-r padding-b ">
     <Hero/>
   </section>
+
+  {/* <section className="items-center">
+    <JustIn/>
+  </section> */}
+
 
   <section className="padding">
     <PopularProducts/>

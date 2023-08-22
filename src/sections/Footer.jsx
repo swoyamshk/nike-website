@@ -14,16 +14,17 @@ const Footer = () => {
                         Your perfect Size In Store. Get Rewards</p>
                     <div className='flex items-center gap-5 mt-8'>
                         {socialMedia.map((icon) => (
-                            <div
-                                className='flex justify-center items-center w-12 h-12 bg-white rounded-full'
-                                key={icon.alt}
+                            <a href={icon.href} // Add this line to make the icon clickable and link to the specified URL
+                                key={icon.alt} target="_blank"
+                                className='flex justify-center items-center w-12 h-12 bg-white rounded-full cursor-pointer'
                             >
                                 <img src={icon.src} alt={icon.alt} width={24} height={24} />
-                            </div>
+                            </a>
                         ))}
                     </div>
+
                 </div>
-                
+
                 <div className="flex flex-1 justify-between lg:gap-10 gap-20 flex-wrap">
                     {footerLinks.map((section) => (
                         <div key={section}>
@@ -42,7 +43,7 @@ const Footer = () => {
 
             <div className="flex justify-between text-white-400 mt-24 max-sm:flex-col max-sm:items-center">
                 <div className="flex flex-1 justify-start items-center gap-2 font-montserrat cursor-pointer">
-                    <img src={copyrightSign} alt="Copyright" width={20} height={20} className="rounded-full m-0"/>
+                    <img src={copyrightSign} alt="Copyright" width={20} height={20} className="rounded-full m-0" />
                     <p>Copyright. All Rights Reserved</p>
                 </div>
                 <p className="font-montserrat cursor-pointer hover:text-slate-gray">Terms & Condition</p>
